@@ -1,10 +1,11 @@
-if (typeof window !== 'undefined') {
+/*if (typeof window !== 'undefined') {
   if (LocalStorage.getItem('theme') == 'dark') {
       theme.href = "css/dark-theme.css";
   } else{
       theme.href = "css/light-theme.css";
       }
-}
+}*/
+alert(LocalStorage.getItem('theme'));
 function checkbo() {
 var switchMode;
 switchMode=document.getElementById("modeCheck");
