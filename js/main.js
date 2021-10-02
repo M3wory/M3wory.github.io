@@ -1,3 +1,4 @@
+var themeTheme = document.getElementById("theme");
 if (localStorage.getItem('thema') == 'dark') {
  themeTheme.href = "css/dark-theme.css";
 } else{
@@ -6,7 +7,6 @@ if (localStorage.getItem('thema') == 'dark') {
 function checkbo() {
 var switchMode;
 switchMode=document.getElementById("modeCheck");
-var themeTheme = document.getElementById("theme");
 	if (switchMode.checked) {
 		themeTheme.href = "css/dark-theme.css";
 		localStorage.setItem('thema', 'dark');
