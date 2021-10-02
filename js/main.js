@@ -9,13 +9,13 @@ alert(LocalStorage.getItem('theme'));
 function checkbo() {
 var switchMode;
 switchMode=document.getElementById("modeCheck");
-var theme = document.getElementById("theme");
+var themeTheme = document.getElementById("theme");
 	if (switchMode.checked) {
-		theme.href = "css/dark-theme.css";
+		themeTheme.href = "css/dark-theme.css";
 		localStorage.setItem('theme', 'dark');
 	}
 	else {
-		theme.href = "css/light-theme.css";
+		themeTheme.href = "css/light-theme.css";
 		localStorage.setItem('theme', 'light');
 	}
 }
