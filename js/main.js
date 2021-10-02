@@ -1,10 +1,10 @@
-/*if (typeof window !== 'undefined') {
-  if (LocalStorage.getItem('theme') == 'dark') {
-      theme.href = "css/dark-theme.css";
+if (typeof window !== 'undefined') {
+  if (localStorage.getItem('thema') == 'dark') {
+      themeTheme.href = "css/dark-theme.css";
   } else{
-      theme.href = "css/light-theme.css";
+      themeTheme.href = "css/light-theme.css";
       }
-}*/
+}
 function checkbo() {
 var switchMode;
 switchMode=document.getElementById("modeCheck");
