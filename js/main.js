@@ -16,4 +16,3 @@ switchMode=document.getElementById("modeCheck");
 		localStorage.setItem('thema', 'light');
 	}
 }
-alert(localStorage.getItem('thema'));
