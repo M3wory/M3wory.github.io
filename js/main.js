@@ -18,4 +18,4 @@ var themeTheme = document.getElementById("theme");
 		localStorage.setItem('thema', 'light');
 	}
 }
-alert(LocalStorage.getItem('thema'));
+alert(localStorage.getItem('thema'));
