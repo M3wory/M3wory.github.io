@@ -5,17 +5,17 @@
       theme.href = "css/light-theme.css";
       }
 }*/
-alert(LocalStorage.getItem('theme'));
 function checkbo() {
 var switchMode;
 switchMode=document.getElementById("modeCheck");
 var themeTheme = document.getElementById("theme");
 	if (switchMode.checked) {
 		themeTheme.href = "css/dark-theme.css";
-		localStorage.setItem('theme', 'dark');
+		localStorage.setItem('thema', 'dark');
 	}
 	else {
 		themeTheme.href = "css/light-theme.css";
-		localStorage.setItem('theme', 'light');
+		localStorage.setItem('thema', 'light');
 	}
 }
+alert(LocalStorage.getItem('thema'));
