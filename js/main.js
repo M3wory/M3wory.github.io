@@ -4,15 +4,21 @@ if (localStorage.getItem('thema') == 'dark') {
 } else{
  themeTheme.href = "css/light-theme.css";
 }
-function checkbo() {
-var switchMode;
-switchMode=document.getElementById("modeCheck");
-	if (switchMode.checked) {
+var themeModeInteger = Number(localStorage.getItem('themeMode'));
+if (themeModeInteger == 0){
+    themeModeInteger = 1
+}
+function themechange() {
+	if (themeModeInteger == 1) {
 		themeTheme.href = "css/dark-theme.css";
 		localStorage.setItem('thema', 'dark');
+		themeModeInteger *= -1;
+		localStorage.setItem('themeMode', themeModeInteger);
 	}
 	else {
 		themeTheme.href = "css/light-theme.css";
 		localStorage.setItem('thema', 'light');
+		themeModeInteger *= -1;
+		localStorage.setItem('themeMode', themeModeInteger);
 	}
 }
