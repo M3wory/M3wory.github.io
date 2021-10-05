@@ -13,16 +13,15 @@ body {
 .topnav {
     background-color: #ffffff;
     overflow: hidden;
-    width: 100%;
 }
 
 .topnav a {
     float: left;
     color: #000000;
     text-align: center;
-    padding: 2% 3%;
+    padding: 2vh 3vw;
     text-decoration: none;
-    font-size: 17px;
+    font-size: calc( (100vw - 30rem)/60 + 1rem);
 }
 
 .topnav a:hover {
